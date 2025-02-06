@@ -2,16 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* You can declare globally accessible CSS variables here and then add them to the ./tailwind.config.ts file */
 :root {
-  --background: #ffffff;
+  --background: #fefefe;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {

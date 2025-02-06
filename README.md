@@ -1,6 +1,7 @@
 # King's Lab Academy - Intermediate Session
 
 Prerequisite's to follow along with this tutorial:
+
 - Install Node.js - this allows you to run javascript projects
 - Install an editor, ideally VSCode
 
@@ -11,11 +12,12 @@ npx create-next-app@latest
 ```
 
 Use the default options when prompted:
+
 - Use typescript
 - Use tailwind.css
 - Do not use `src/` directory
 
-To start the project, you can 
+To start the project, you can
 
 ## Academy Structure
 
@@ -34,4 +36,3 @@ To start the project, you can
 ## Part 4
 
 ## Part 5
-
