@@ -17,7 +17,11 @@ Use the default options when prompted:
 - Use tailwind.css
 - Do not use `src/` directory
 
-To start the project, you can
+To start the project, you can run
+
+```sh
+npm run dev
+```
 
 ## Academy Structure
 
@@ -95,6 +99,18 @@ If you don't wanna do this, you can always provide a specific value with `[]` e.
 To get started, lets create a calendar component. You can find the final product and comments in the [components/Calendar.tsx](/components/Calendar.tsx) file
 
 > The golden rule of webdevelopment, someone has already made a javascript library to do the thing you want to do
+
+We will be importing the `lodash` and `date-fns` packages to help us build our frontend. You can import any package you want with:
+
+```sh
+npm i lodash date-fns ...
+```
+
+If you find that the types for a given package are missing (you notice vscode is giving you alot of red lines and unknown type errors). Try run the following incase the types are packaged separately:
+
+```sh
+npm i @types/lodash
+```
 
 ## Part 2
 
