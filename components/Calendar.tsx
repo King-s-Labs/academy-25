@@ -69,10 +69,21 @@ export function Calendar({
    * ```ts
    * const [x, setX] = useState<T>(initialValueForX)
    * ```
+   *
+   * or alternately:
+   *
+   * ```ts
+   * const [x, setX] = useState<T>(() => initialValueForX)
+   * ```
+   *
+   * where we supply a function that specifies how the initial value is generated
    */
   const [viewMonth, setViewMonth] = useState<Date>(() =>
     startOfMonth(new Date()),
   );
+
+  // React provides a series of hooks for manipulating a component and its state
+  // that you should learn: useState, useEffect, useMemo, useCallback
 
   // We can define some internal logic for the component in the body of the function
 
@@ -88,7 +99,7 @@ export function Calendar({
     // Tailwind allows us to specify all the styling using premade classes
     // you can find all the utility classes at https://tailwindcss.com/docs
     // and use Ctrl-/ to search for any Tailwind equivalent
-    <div className="grid select-none grid-cols-7 grid-rows-8 items-center justify-center gap-1 rounded-md border border-slate-200 bg-gradient-to-t from-slate-100 to-slate-50 p-1 text-sm">
+    <div className="grid min-w-[20rem] max-w-[20rem] select-none grid-cols-7 grid-rows-8 items-center justify-center gap-1 rounded-md border border-slate-200 bg-gradient-to-t from-slate-100 to-slate-50 p-1 text-sm shadow">
       <p className="text-md col-span-5 px-2 font-semibold text-accent">
         {format(viewMonth, "LLLL yyyy")}
       </p>
