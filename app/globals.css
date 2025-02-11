@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 /* You can declare globally accessible CSS variables here and then add them to the ./tailwind.config.ts file */
-:root {
-  --background: #fefefe;
-  --foreground: #171717;
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }

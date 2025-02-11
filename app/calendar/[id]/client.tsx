@@ -16,7 +16,7 @@ export function ClientSide({ calendarId }: { calendarId: string }) {
   );
 
   return (
-    <div className="flex h-full items-center justify-center gap-20 p-20 max-md:flex-col">
+    <div className="flex h-full items-center justify-center max-md:flex-col max-md:gap-10 max-md:p-10 md:gap-12 md:p-20">
       <Calendar selectedDate={date} setSelectedDate={setDate} />
       <TimeSelector calendarId={calendarId} availableTimes={availableTimes} />
     </div>
